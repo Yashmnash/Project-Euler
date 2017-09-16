@@ -1,0 +1,60 @@
+# Project Euler problem 42: Coded triangle numbers
+# By Yash Desai
+
+import string
+import time
+
+start = time.time()
+
+
+# wordvalue: A function that will take strings and assign values
+# to the letters of a word, add them, and return the sum.
+
+def wordvalue(a):
+    
+    Sum = 0
+
+    # This loop starts at position 1 and ends one before the end
+    # since all words are enclosed by quotation marks
+    for i in range(1,len(a)-1):
+        
+        # The ascii order of each lower case letter is 64 off
+        # from the alphabetical value ie. ord('a') = 65, hence
+        # ord('a') - 64 = 1, which is the alphabetical value of
+        # 'a'.
+        Sum += ord(a[i]) - 64
+        
+    return Sum
+
+
+# Creating a list tri_num and assigning to it the first 100
+# triangle numbers
+tri_num = []
+
+for i in range(100):
+    t = int(i * (i+1) * 0.5)
+    tri_num.append(t)
+
+    
+f = open('p042_words.txt')
+f = str(f.read())
+
+# Splitting the list of words by commas
+Words = f.split(",")
+
+# Iterating through the words and counting the "triangle words"
+count = 0
+for j in Words:
+    
+    if wordvalue(j) in tri_num:
+        count += 1
+
+    else:
+        continue
+
+print('The answer is %s, found in %s seconds' % (count,
+        time.time() - start))
+        
+        
+
+
