@@ -7,7 +7,7 @@ import time
 
 start = time.time()
 
-# Pentangonal checks whether x is a pentagonal number. This is
+# Pentagonal checks whether x is a pentagonal number. This is
 # done by solving the pentagonal formula using the quadratic
 # formula. See wikipedia for notes. If the formula yields a nat-
 # -ural number it means that the value x has that index in the
