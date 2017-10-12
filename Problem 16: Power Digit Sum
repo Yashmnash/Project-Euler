@@ -1,3 +1,6 @@
+# Problem 16: Power Digit Sum
+# By Yash Desai
+
 import time
 
 start = time.time()
