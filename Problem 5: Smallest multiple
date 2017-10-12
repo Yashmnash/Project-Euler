@@ -1,3 +1,6 @@
+# Project Euler Problem 5: Smallest multiple
+# By Yash Desai
+
 def prod(A):                #Returns product of terms of iterable
     product = 1
     for i in A:
