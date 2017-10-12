@@ -1,3 +1,6 @@
+# Project Euler Problem 12: Highly divisible triangular number
+# By Yash Desai
+
 import time
 
 def num_divisors(n):
