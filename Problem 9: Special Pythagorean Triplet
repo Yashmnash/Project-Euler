@@ -1,0 +1,35 @@
+# Project Euler Problem 9: Special Pythagorean Triplet
+# By Yash Desai
+
+import math
+
+def PTGC(a,b):
+
+    return math.sqrt((a*a) + (b*b))
+
+
+A = []
+B = []
+C = []
+
+i = 0
+
+
+
+
+
+for a in range(0,1001):
+    for b in range(a+1,1001):
+        c = PTGC(a,b)
+        if (a<b<c) and (a+b+c ==1000):
+            print(a*b*c)
+        else:
+            continue
+         
+                
+
+print(A)
+print(B)
+print(C)
+
+    
