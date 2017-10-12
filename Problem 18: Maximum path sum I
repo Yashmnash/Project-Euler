@@ -1,8 +1,5 @@
-##def adder(A):
-##    Sum = A[0][0]
-##       
-##
-##    return Sum + 
+# Project Euler Problem 18: Maximum path sum
+# By Yash Desai
 import time      
 
 
